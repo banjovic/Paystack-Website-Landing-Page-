@@ -5,4 +5,24 @@ body {
     "Segoe UI Symbol";
   font-size: 1.6rem;
   line-height: 1.5;
+  box-sizing: border-box;
+  
 }
+
+
+.header{
+  background-color:#011b33;
+  border:15px solid #011b33;
+}
+
+.header a{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 17px;
+  color: rgb(223, 215, 215);
+}
+
+
+  
