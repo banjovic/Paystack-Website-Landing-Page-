@@ -5,4 +5,43 @@ body {
     "Segoe UI Symbol";
   font-size: 1.6rem;
   line-height: 1.5;
+  margin: 0 auto;
+}
+
+.first_part {
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.first_part_inner1 {
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: center;
+}
+video {
+  max-width: 100%;
+  width: 60rem;
+  height: 40rem;
+  object-fit: contain;
+}
+h3 {
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.first_part_inner2 {
+  align-items: center;
+}
+
+p {
+  font-size: 1.9rem;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  font-weight: normal;
+}
+
+.first_part_inner2_1 {
+  margin-bottom: 10px;
 }
