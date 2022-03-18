@@ -58,7 +58,7 @@ body {
   height: 20px;
 }
 
-.expanded_dropdown{
+.expanded_dropdown {
   display: flex= 10px;
 }
 
@@ -77,4 +77,10 @@ a {
 
 .heroPage {
   margin-top: 150px;
+}
+
+.expanded_dropdown {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
