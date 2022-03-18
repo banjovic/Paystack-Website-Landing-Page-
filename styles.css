@@ -58,6 +58,10 @@ body {
   height: 20px;
 }
 
+.expanded_dropdown{
+  display: flex= 10px;
+}
+
 ul {
   list-style: none;
 }
