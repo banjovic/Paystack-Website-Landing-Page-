@@ -1,22 +1,19 @@
-
-
 body {
- color: #011b33;
+  color: #011b33;
   font-family: "Graphik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji","Segoe UI Symbol";
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
   font-size: 1.6rem;
   box-sizing: border-box;
   line-height: 1.5;
-  
 }
 
-
-.top-banner{
-  background-color:#011b33;
-  border:15px solid #011b33;
+.top-banner {
+  background-color: #011b33;
+  border: 15px solid #011b33;
 }
 
-.top-banner a{
+.top-banner a {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -26,39 +23,54 @@ body {
 }
 
 /* header nav bar*/
-.navbar{
-  display: flex;
-  justify-content: center;
+.textSize {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #011b33;
+  line-height: 1.3;
+  vertical-align: middle;
+  letter-spacing: -0.01em;
 }
-
-
-.btn{
+/* .btn {
   margin: 0px 20px 0 0;
   padding: 10px 35px;
   background-color: #3bb75e;
-  border: 1px solid #3bb75e; 
+  border: 1px solid #3bb75e;
   color: white;
+} */
 
-  
-}
-
-.text{
+.text {
   color: #3bb75e;
   font: 13.92px;
   text-decoration: none;
 }
 
-#row{
+#row {
   display: flex;
   align-items: center;
   padding-right: 60px;
   block-size: 50%;
 }
 
+.navbarCountryLogo {
+  max-width: 100%;
+  width: 20px;
+  height: 20px;
+}
 
+ul {
+  list-style: none;
+}
 
+a {
+  text-decoration: none;
+}
 
+.paystackLogo {
+  height: 22px;
+  border-radius: 4px;
+}
 
-
-
-
+.heroPage {
+  margin-top: 150px;
+}
