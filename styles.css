@@ -31,6 +31,8 @@ body {
   vertical-align: middle;
   letter-spacing: -0.01em;
 }
+
+
 /* .btn {
   margin: 0px 20px 0 0;
   padding: 10px 35px;
@@ -39,10 +41,11 @@ body {
   color: white;
 } */
 
-.text {
+.link {
   color: #3bb75e;
   font: 13.92px;
   text-decoration: none;
+  display: flex;
 }
 
 #row {
@@ -62,8 +65,17 @@ body {
   display: flex= 10px;
 }
 
+.dropdown-item{
+  font-weight: 30px;
+}
+
 ul {
   list-style: none;
+}
+
+.row{
+  display: flex;
+  align-items: center;
 }
 
 a {
@@ -84,3 +96,10 @@ a {
   flex-direction: row;
   gap: 10px;
 }
+
+.col-2 ul{
+  font-size: x-small; /*the font size is not working*/
+  display: flex;
+  gap: 20px;
+}
+
