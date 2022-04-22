@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   color: #011b33;
   font-family: "Graphik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -6,17 +16,27 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   margin: 0 auto;
-  /* width: 1200px; */
-
-  /* box-sizing: 100%; */
-
-  /* box-sizing: border-box;
-  display: block;
-  padding-top: 100px;
-  padding-bottom: 100px; */
 }
 
-/* NavBar and HeroPage */
+/* ****** */
+/**** General Stuff ****/
+/* ****** */
+.heading-primary,
+.heading-secondary {
+  font-weight: 700;
+  color: #011b33;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 4.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+/* ****** */
+/**** NavBar ****/
+/* ****** */
 .top-banner {
   background-color: #011b33;
   border: 15px solid #011b33;
@@ -27,18 +47,41 @@ body {
   text-align: center;
   justify-content: center;
   text-decoration: none;
-  font-size: 17px;
-  color: rgb(223, 215, 215);
+  font-size: 1.7rem;
+  color: rgb(223, 215, 215) !important;
 }
 
-/* header nav bar*/
-.textSize {
-  font-size: 1.5rem;
+.navbar {
+  background-color: #f1fef4 !important;
+}
+
+.nav-section {
+  max-width: 140rem;
+  padding: 0 3.8rem !important;
+}
+
+.paystackLogo {
+  height: 3.2rem;
+  /* border-radius: 4px; */
+}
+
+a {
+  font-size: 1.6rem;
   font-weight: 500;
-  color: #011b33;
+  color: #011b33 !important;
   line-height: 1.3;
   vertical-align: middle;
   letter-spacing: -0.01em;
+  text-decoration: none;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 5px;
 }
 
 /* .btn {
@@ -51,7 +94,7 @@ body {
 
 .link {
   color: #3bb75e;
-  font: 13.92px;
+  font-size: 1.4rem;
   text-decoration: none;
   display: flex;
 }
@@ -59,18 +102,18 @@ body {
 #row {
   display: flex;
   align-items: center;
-  padding-right: 60px;
+  padding-right: 6rem;
   block-size: 50%;
 }
 
 .navbarCountryLogo {
   max-width: 100%;
-  width: 20px;
+  width: 2rem;
   height: 20px;
 }
 
 .expanded_dropdown {
-  display: flex= 10px;
+  display: flex=10px;
 }
 
 .dropdown-item {
@@ -92,13 +135,24 @@ ul {
   text-decoration: none;
 } */
 
-.paystackLogo {
-  height: 22px;
-  border-radius: 4px;
+
+/* ****** */
+/**** Hero Section ****/
+/* ****** */
+.heroPage {
+  background-color: #f1fef4;
+  padding: 4.8rem 0 9.6rem 0;
+  margin: 0 auto;
 }
 
-.heroPage {
-  margin-top: 150px;
+.hero {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  padding: 0 5.2rem;
+  align-items: center;
 }
 
 .expanded_dropdown {
@@ -108,7 +162,7 @@ ul {
 }
 
 .row-1 {
-  padding: 20px;
+  padding: 2rem;
   display: flex;
 }
 
@@ -124,6 +178,7 @@ ul {
   /* line-height: 1rem; */
   /* box-sizing: border-box; */
 }
+
 .first-section-header {
   background-color: red;
 }
@@ -135,12 +190,13 @@ ul {
 }
 
 .row-left {
-  padding: 30px;
+  padding: 3rem;
 }
+
 .row-right {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  row-gap: 30px;
+  row-gap: 3rem;
 }
 
 .list {
@@ -151,7 +207,7 @@ ul {
 .first-section-division2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 30px;
+  column-gap: 3rem;
 }
 
 .first_part {
@@ -168,12 +224,14 @@ ul {
   flex-direction: column;
   align-items: center;
 }
+
 video {
   max-width: 100%;
   width: 60rem;
   height: 40rem;
   object-fit: contain;
 }
+
 h3 {
   font-weight: 800;
   line-height: 1.2;
@@ -188,7 +246,7 @@ h3 {
 
 .first_part,
 .second-part,
-.third-part > div {
+.third-part>div {
   font-size: 1.9rem;
   line-height: 1.5;
   letter-spacing: -0.01em;
@@ -204,35 +262,37 @@ h3 {
   background-image: "./assets/img/checked-pattern-blue.png";
   background-repeat: no-repeat;
   object-fit: contain;
-  padding: 100px;
+  padding: 10rem;
 }
 
 .cards-container {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 20px;
+  column-gap: 2rem;
 }
 
 .cards {
   background-color: #fff;
-  padding: 30px;
+  padding: 3rem;
 }
+
 /* a {
   text-decoration: none;
 } */
 
 .third_part {
   background-color: #fff;
-  height: 350px;
-  padding: 100px;
+  height: 35rem;
+  padding: 10rem;
 }
+
 .logos-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  column-gap: 5px;
-  row-gap: 10px;
+  column-gap: 0.5rem;
+  row-gap: 1rem;
   align-items: center;
   justify-content: center;
   justify-items: center;
@@ -240,16 +300,16 @@ h3 {
 }
 
 .logos {
-  height: 20px;
+  height: 2rem;
   width: auto;
   max-height: 100%;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 /* last part with footer */
 .section-pattern--circular::before {
   top: -100px;
-  background-size: 600px 600px;
+  background-size: 60rem 60rem;
   background-position-x: 100% 200px;
   background-position-y: center;
   background-image: url(assets/content/circular\ background.png);
@@ -303,7 +363,7 @@ p {
 }
 
 .col {
-  margin-right: 20px;
+  margin-right: 2rem;
   box-sizing: border-box;
   display: block;
 }
@@ -311,12 +371,12 @@ p {
 .card {
   overflow: hidden;
   height: 100%;
-  border-radius: 6px;
+  border-radius: 0.6rem;
   border: 1px solid #f0f2f3;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: 48px 32px;
+  padding: 4.8rem 3.2rem;
   box-shadow: 0px 1px 6px rgb(0 0 0 / 2%);
   background: white;
   position: relative;
@@ -324,7 +384,7 @@ p {
   box-sizing: border-box;
 }
 
-.logo > img {
+.logo>img {
   max-height: 100;
   border-style: none;
   box-sizing: border-box;
@@ -335,7 +395,7 @@ p {
   padding-right: 0;
   padding-left: 0;
   position: relative;
-  height: 28px;
+  height: 2.8rem;
   user-select: none;
 }
 
@@ -349,12 +409,12 @@ p {
 }
 
 .partnerp {
-  margin: 32px 0;
+  margin: 3.2rem 0;
   font-weight: normal;
   box-sizing: border-box;
   display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
   margin-block-start: 0px;
   margin-inline-end: 0px;
 }
@@ -362,13 +422,13 @@ p {
 .partner1 {
   display: inline-flex;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 1rem;
   box-sizing: border-box;
 }
 
-.card-image > img {
-  width: 40px;
-  height: 40px;
+.card-image>img {
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
   background-color: #eaf6fc;
   margin-right: 12px;
@@ -438,7 +498,7 @@ p {
   display: block;
 }
 
-.signup-left > p {
+.signup-left>p {
   margin-bottom: 20px;
   font-size: 1.3rem;
   line-height: 1.5;
@@ -446,7 +506,7 @@ p {
   margin: 0;
 }
 
-.signup-left > h2 {
+.signup-left>h2 {
   font-size: 2.5rem;
   line-height: 1.5;
   font-weight: 700;
@@ -511,7 +571,7 @@ p {
   display: list-item;
 }
 
-li > a {
+li>a {
   color: inherit;
   text-decoration: none;
   list-style: none;
