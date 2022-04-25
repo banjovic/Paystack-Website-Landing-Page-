@@ -360,6 +360,12 @@ svg {
   gap: 5px;
 }
 
+.hero-footer-left p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1.2;
+}
+
 .hero-footer-left .hero-footer-left-logo {
   display: flex;
   flex-direction: row;
@@ -376,8 +382,7 @@ svg {
 .hero-footer-right {
   position: relative;
   display: flex;
-  gap: 5px;
-  left: 70rem;
+  left: 20rem;
 }
 
 .hero-footer-right a {
