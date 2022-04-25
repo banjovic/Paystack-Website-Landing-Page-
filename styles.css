@@ -402,12 +402,15 @@ svg {
 .first-section {
   display: flex;
   flex-direction: column;
+  max-width: 130rem;
+  margin: 0 auto;
   /* line-height: 1rem; */
   /* box-sizing: border-box; */
 }
 
 .first-section-header {
-  background-color: red;
+  /* background-color: red; */
+  padding: 10rem;
 }
 
 .first-section-division {
