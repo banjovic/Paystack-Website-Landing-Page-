@@ -1,3 +1,9 @@
+/* Colors */
+
+/* White: #f1fef4 */
+/* Blue: #011b33 */
+/* Green: #3bb75e */
+
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +28,8 @@ body {
 /**** General Stuff ****/
 /* ****** */
 .heading-primary,
-.heading-secondary {
+.heading-secondary,
+.heading-tertiary {
   font-weight: 700;
   color: #011b33;
   letter-spacing: -0.5px;
@@ -31,7 +38,63 @@ body {
 .heading-primary {
   font-size: 4.2rem;
   line-height: 1.05;
+  margin-bottom: 2.2rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
   margin-bottom: 3.2rem;
+}
+
+a {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #011b33 !important;
+  line-height: 1.3;
+  vertical-align: middle;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 0.7rem 2rem;
+  border-radius: 5px;
+
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  /* Put transition on original state */
+  transition: all 0.3s;
+}
+
+.btn-success:link,
+.btn-success:visited {
+  background-color: #3bb75e;
+  color: #f1fef4 !important;
+}
+
+.btn-success:hover,
+.btn-success:active {
+  background-color: #cf711f;
+}
+
+.btn-outline:link,
+.btn-outline:visited {
+  /* background-color: #fff; */
+  color: #555;
+}
+
+.btn-outline:hover,
+.btn-outline:active {
+  border: 2px solid #3bb75e;
+  box-shadow: inset 0 0 0 2px #fff;
 }
 
 /* ****** */
@@ -56,41 +119,18 @@ body {
 }
 
 .nav-section {
-  max-width: 140rem;
+  max-width: 150rem;
   padding: 0 3.8rem !important;
+}
+
+.nav-item {
+  align-items: center;
+  justify-content: center;
 }
 
 .paystackLogo {
   height: 3.2rem;
-  /* border-radius: 4px; */
 }
-
-a {
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: #011b33 !important;
-  line-height: 1.3;
-  vertical-align: middle;
-  letter-spacing: -0.01em;
-  text-decoration: none;
-}
-
-.btn:link,
-.btn:visited {
-  text-decoration: none;
-  font-size: 1.6rem;
-  font-weight: 600;
-  padding: 1.6rem 3.2rem;
-  border-radius: 5px;
-}
-
-/* .btn {
-  margin: 0px 20px 0 0;
-  padding: 10px 35px;
-  background-color: #3bb75e;
-  border: 1px solid #3bb75e;
-  color: white;
-} */
 
 .link {
   color: #3bb75e;
@@ -108,12 +148,12 @@ a {
 
 .navbarCountryLogo {
   max-width: 100%;
-  width: 2rem;
-  height: 20px;
+  width: 1.5rem;
+  height: 15px;
 }
 
 .expanded_dropdown {
-  display: flex=10px;
+  /* display: flex=10px; */
 }
 
 .dropdown-item {
@@ -131,28 +171,163 @@ ul {
   position: relative;
 }
 
-/* a {
-  text-decoration: none;
-} */
+.right-nav {
+  align-items: center !important;
+}
 
+.wide-dropdown {
+  padding: 0 !important;
+  width: 500px !important;
+}
+
+.nav-dropdown-why-paystack-universal {
+  display: grid !important;
+  grid-template-columns: 2fr 1fr !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.nav-dropdown-why-paystack-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px !important;
+}
+
+.nav-dropdown-why-paystack-left-div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.nav-dropdown-why-paystack-left-div div img {
+  width: 30px;
+  height: 30px;
+}
+
+.nav-dropdown-why-paystack-left-div div .dropdown-item {
+  font-weight: bold;
+  padding: 0 !important;
+  font-size: 1.5rem;
+}
+
+.nav-dropdown-why-paystack-left-div div p {
+  font-size: 1.4rem;
+}
+
+.nav-dropdown-why-paystack-right {
+  background-color: rgba(236, 232, 232, 0.7);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px 20px 20px 5px !important;
+  font-size: 1.4rem;
+}
+
+.nav-dropdown-why-paystack-right .list-heading {
+  text-transform: uppercase;
+  font-weight: normal !important;
+  font-size: 1rem !important;
+}
+
+.nav-dropdown-why-paystack-right ul li {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.wrapper-dropdown {
+  padding: 10px !important;
+  border-radius: 5px;
+  background-color: #f1fef4;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.wrapper-dropdown li .dropdown-item {
+  font-weight: 700 !important;
+}
+
+.wrapper-dropdown-flag {
+  padding: 15px 10px !important;
+  width: 150px !important;
+  border: none;
+}
+
+.wrapper-dropdown-flag li {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper-dropdown-flag li .dropdown-item {
+  font-weight: normal !important;
+}
 
 /* ****** */
 /**** Hero Section ****/
 /* ****** */
 .heroPage {
   background-color: #f1fef4;
-  padding: 4.8rem 0 9.6rem 0;
+  padding: 6.8rem 0 8.6rem 0;
   margin: 0 auto;
 }
 
 .hero {
-  max-width: 120rem;
+  max-width: 130rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.2rem;
-  padding: 0 5.2rem;
+  padding: 0 3.2rem;
   align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 3.8rem;
+}
+
+.hero-img {
+  max-width: 100%;
+  width: 60rem;
+  /* height: 60rem; */
+  border-radius: 100%;
+  position: absolute;
+  left: 70rem;
+}
+
+.hero-img-radius {
+  border-radius: 100%;
+}
+
+/* #upPopUp,
+#paystackPopUp,
+#closeToPaystackPopUp,
+#underLeftPopUp,
+#underRightPopUp {
+  display: none;
+}
+
+svg text {
+  display: none;
+}
+svg g:hover text {
+  display: block;
+} */
+
+.tooltip ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+svg {
+  max-width: 640px;
+  margin: 0 auto;
+  display: block;
 }
 
 .expanded_dropdown {
@@ -169,6 +344,53 @@ ul {
 .col-4 {
   text-align: right;
   padding-right: 1px;
+}
+
+.hero-footer {
+  margin-top: 9.6rem;
+  display: flex;
+  flex-direction: row;
+  /* gap: 80rem; */
+  justify-content: space-between;
+}
+
+.hero-footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hero-footer-left .hero-footer-left-logo {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.hero-footer-left .hero-footer-left-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  height: 2.8rem;
+  width: auto;
+}
+
+.hero-footer-right {
+  position: relative;
+  display: flex;
+  gap: 5px;
+  left: 70rem;
+}
+
+.hero-footer-right a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  justify-content: right;
+}
+
+.hero-footer-right img {
+  height: 6rem;
+  width: 6rem;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /* Simple Easy Payment Part */
@@ -246,7 +468,7 @@ h3 {
 
 .first_part,
 .second-part,
-.third-part>div {
+.third-part > div {
   font-size: 1.9rem;
   line-height: 1.5;
   letter-spacing: -0.01em;
@@ -384,7 +606,7 @@ p {
   box-sizing: border-box;
 }
 
-.logo>img {
+.logo > img {
   max-height: 100;
   border-style: none;
   box-sizing: border-box;
@@ -426,7 +648,7 @@ p {
   box-sizing: border-box;
 }
 
-.card-image>img {
+.card-image > img {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
@@ -498,7 +720,7 @@ p {
   display: block;
 }
 
-.signup-left>p {
+.signup-left > p {
   margin-bottom: 20px;
   font-size: 1.3rem;
   line-height: 1.5;
@@ -506,7 +728,7 @@ p {
   margin: 0;
 }
 
-.signup-left>h2 {
+.signup-left > h2 {
   font-size: 2.5rem;
   line-height: 1.5;
   font-weight: 700;
@@ -571,7 +793,7 @@ p {
   display: list-item;
 }
 
-li>a {
+li > a {
   color: inherit;
   text-decoration: none;
   list-style: none;
