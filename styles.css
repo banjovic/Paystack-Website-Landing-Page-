@@ -605,6 +605,14 @@ h3 {
   /* padding: 20px; */
 }
 
+.second_part .second_part_div ul li a {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  text-decoration: none;
+}
+
 /* ********* */
 /* last part with footer */
 /* ********* */
@@ -637,31 +645,6 @@ h3 {
   display: block;
   box-sizing: border-box;
 }
-
-/* .first-part-header {
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1.2;
-  margin: 0 0 1.5rem;
-} */
-
-/* .summary {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  letter-spacing: -0.01em;
-  margin: 0;
-  font-weight: normal;
-  box-sizing: border-box;
-  margin: 0 0 6rem;
-} */
-
-/* p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-block-start: 0;
-  margin-inline-end: 0;
-} */
 
 .row {
   margin-bottom: 3rem;
