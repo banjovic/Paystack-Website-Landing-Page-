@@ -461,7 +461,7 @@ svg {
 .first-section-division2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 3rem;
+  column-gap: 30px;
   /* margin-bottom: 20rem; */
 }
 
@@ -474,6 +474,10 @@ svg {
 }
 
 .last-right {
+  padding: 3rem;
+}
+
+.last-right img {
   max-width: 100%;
 }
 
@@ -528,7 +532,7 @@ h3 {
 
 .first_part,
 .second-part,
-.third-part > div {
+.third-part>div {
   font-size: 1.9rem;
   line-height: 1.5;
   letter-spacing: -0.01em;
@@ -718,7 +722,7 @@ h3 {
   box-sizing: border-box;
 }
 
-.card-image > img {
+.card-image>img {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
@@ -880,3 +884,129 @@ h3 {
 /* .social-media-icons {
   filter: grayscale(100%);
 } */
+
+
+
+/**************************/
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 3.4rem;
+  }
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 2.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 1.4rem;
+  }
+
+  .header {
+    padding: 0 2.2rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }  
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 6rem;
+    gap: 4.4rem;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .logos img {
+    height: 2.4rem;
+  }
+
+  .card_container {
+    grid-template-columns: 1fr;
+  }
+}
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+
+  .first-footer,
+  .second-part-max {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heading-secondary {
+    margin-bottom: 2.6rem;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .section-hero {
+    padding: 1rem 0 4rem 0;
+  }
+
+  .hero {
+    padding: 0 2.2rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .logos img {
+    height: 1.2rem;
+  }
+}
